@@ -1016,6 +1016,446 @@
 					</div>
 				</div>
 			</div>
+			<div class="sheet-section-kingdom-body">
+				<div class="sheet-tabs">
+					<div class="sheet-tab sheet-tab-core">
+						<input type="radio" name="attr_tab" value="core" checked="checked">
+						<span class="sheet-tab-label">Core</span>
+						<div class="sheet-tab-content">
+							<div class="sheet-container-well-attributes">
+								<div class="sheet-kingdom-attributes">
+									<div class="sheet-container-attribute">
+										<div class="sheet-container-header">
+											<button type="roll" name="roll_economy" value="@{wtype}&{template:simple} {{rname=Economy}} {{mod=@{economy}}} {{r1=[[@{d20}+@{economy}-@{unrest}[ECON]]]}} @{rtype}+@{economy}-@{unrest}[ECON]]]}} @{kingdom_name}">Economy</button>
+										</div>
+										<div class="sheet-container-body">
+											<span name="attr_economy" title="@{economy}">0</span>
+										</div>
+									</div>
+									<div class="sheet-container-attribute">
+										<div class="sheet-container-header">
+											<button type="roll" name="roll_loyalty" value="@{wtype}&{template:simple} {{rname=Loyalty}} {{mod=@{loyalty}}} {{r1=[[@{d20}+@{loyalty}[LOY]]]}} @{rtype}+@{loyalty}[LOY]]]}} @{kingdom_name}">Loyalty</button>
+										</div>
+										<div class="sheet-container-body">
+											<span name="attr_loyalty" title="@{loyalty}">0</span>
+										</div>
+									</div>
+									<div class="sheet-container-attribute">
+										<div class="sheet-container-header">
+											<button type="roll" name="roll_stability" value="@{wtype}&{template:simple} {{rname=Stability}} {{mod=@{stability}}} {{r1=[[@{d20}+@{stability}[STAB]]]}} @{rtype}+@{stability}[STAB]]]}} @{kingdom_name}">Stability</button>
+										</div>
+										<div class="sheet-container-body">
+											<span name="attr_stability" title="@{stability}">0</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="sheet-container-well sheet-container-well-trackers-econ">
+								<div class="math0">
+									<p>=</p>
+								</div>
+								<div class="sheet-container-box sheet-kingdom-econ-buildings">
+									<div class="sheet-container-header">
+										<button type="text" name="economy_buildings">Buildings</button>
+									</div>
+									<div class="sheet-container-body">
+										<input type="text" name="attr_economy_buildings" title="@{economy_buildings}">
+									</div>
+								</div>
+								<div class="math1">
+									<p>+</p>
+								</div>
+								<div class="sheet-container-box sheet-kingdom-econ-edicts-pos">
+									<div class="sheet-container-header">
+										<button type="text" name="economy_edicts_pos">Edicts</button>
+									</div>
+									<div class="sheet-container-body">
+										<input type="text" name="attr_economy_edicts_pos" title="@{economy_edicts_pos}">
+									</div>
+								</div>
+								<div class="math2">
+									<p>+</p>
+								</div>
+								<div class="sheet-container-box sheet-kingdom-econ-events">
+									<div class="sheet-container-header">
+										<button type="text" name="economy_events">Events</button>
+									</div>
+									<div class="sheet-container-body">
+										<input type="text" name="attr_economy_events" title="@{economy_events}">
+									</div>
+								</div>
+								<div class="math3">
+									<p>+</p>
+								</div>
+								<div class="sheet-container-box sheet-kingdom-econ-leadership">
+									<div class="sheet-container-header">
+										<button type="text" name="economy_leadership">Leadership</button>
+									</div>
+									<div class="sheet-container-body">
+										<input type="text" name="attr_economy_leadership" title="@{economy_leadership}">
+									</div>
+								</div>
+								<div class="math4">
+									<p>+</p>
+								</div>
+								<div class="sheet-container-box sheet-kingdom-econ-resources">
+									<div class="sheet-container-header">
+										<button type="text" name="economy_resources">Resources</button>
+									</div>
+									<div class="sheet-container-body">
+										<input type="text" name="attr_economy_resources" title="@{economy_resources}">
+									</div>
+								</div>
+								<div class="math5">
+									<p>+</p>
+								</div>
+								<div class="sheet-container-box sheet-kingdom-econ-alignment">
+									<div class="sheet-container-header">
+										<button type="text" name="economy_alignment">Alignment</button>
+									</div>
+									<div class="sheet-container-body">
+										<input type="text" name="attr_economy_alignment" title="@{economy_alignment}">
+									</div>
+								</div>
+								<div class="math6">
+									<p>+</p>
+								</div>
+								<div class="sheet-container-box sheet-kingdom-econ-skill">
+									<div class="sheet-container-header">
+										<button type="text" name="economy_skill">Skill</button>
+									</div>
+									<div class="sheet-container-body">
+										<input type="text" name="attr_economy_skill" title="@{economy_skill}">
+									</div>
+								</div>
+								<div class="math7">
+									<p>+</p>
+								</div>
+								<div class="sheet-container-box sheet-kingdom-econ-government">
+									<div class="sheet-container-header">
+										<button type="text" name="economy_government">Government</button>
+									</div>
+									<div class="sheet-container-body">
+										<input type="text" name="attr_economy_government" title="@{economy_government}">
+									</div>
+								</div>
+								<div class="math8">
+									<p>-</p>
+								</div>
+								<div class="sheet-container-box sheet-kingdom-econ-edicts-neg">
+									<div class="sheet-container-header">
+										<button type="text" name="economy_edicts_neg">Edicts</button>
+									</div>
+									<div class="sheet-container-body">
+										<input type="text" name="attr_economy_edicts_neg" title="@{economy_edicts_neg}">
+									</div>
+								</div>
+								<div class="math9">
+									<p>-</p>
+								</div>
+								<div class="sheet-container-box sheet-kingdom-econ-unrest">
+									<div class="sheet-container-header">
+										<button type="text" name="economy_unrest">Unrest</button>
+									</div>
+									<div class="sheet-container-body">
+										<input type="text" value="@{unrest}">
+									</div>
+								</div>
+								<div class="math10">
+									<p>-</p>
+								</div>
+								<div class="sheet-container-box sheet-kingdom-econ-vacancies">
+									<div class="sheet-container-header">
+										<button type="text" name="economy_vacancies">Vacancies</button>
+									</div>
+									<div class="sheet-container-body">
+										<input type="text" name="attr_economy_vacancies" title="@{economy_vacancies}">
+									</div>
+								</div>
+								<div class="math11">
+									<p>-</p>
+								</div>
+								<div class="sheet-container-box sheet-kingdom-econ-other">
+									<div class="sheet-container-header">
+										<button type="text" name="economy_other">Other</button>
+									</div>
+									<div class="sheet-container-body">
+										<input type="text" name="attr_economy_other" title="@{economy_other}">
+									</div>
+								</div>
+							</div>
+							<div class="sheet-container-well sheet-container-well-trackers-loy">
+								<div class="math0">
+									<p>=</p>
+								</div>
+								<div class="sheet-container-box sheet-kingdom-loy-buildings">
+									<div class="sheet-container-header">
+										<button type="text" name="loyalty_buildings">Buildings</button>
+									</div>
+									<div class="sheet-container-body">
+										<input type="text" name="attr_loyalty_buildings" title="@{loyalty_buildings}">
+									</div>
+								</div>
+								<div class="math1">
+									<p>+</p>
+								</div>
+								<div class="sheet-container-box sheet-kingdom-loy-edicts-pos">
+									<div class="sheet-container-header">
+										<button type="text" name="loyalty_edicts_pos">Edicts</button>
+									</div>
+									<div class="sheet-container-body">
+										<input type="text" name="attr_loyalty_edicts_pos" title="@{loyalty_edicts_pos}">
+									</div>
+								</div>
+								<div class="math2">
+									<p>+</p>
+								</div>
+								<div class="sheet-container-box sheet-kingdom-loy-events">
+									<div class="sheet-container-header">
+										<button type="text" name="loyalty_events">Events</button>
+									</div>
+									<div class="sheet-container-body">
+										<input type="text" name="attr_loyalty_events" title="@{loyalty_events}">
+									</div>
+								</div>
+								<div class="math3">
+									<p>+</p>
+								</div>
+								<div class="sheet-container-box sheet-kingdom-loy-leadership">
+									<div class="sheet-container-header">
+										<button type="text" name="loyalty_leadership">Leadership</button>
+									</div>
+									<div class="sheet-container-body">
+										<input type="text" name="attr_loyalty_leadership" title="@{loyalty_leadership}">
+									</div>
+								</div>
+								<div class="math4">
+									<p>+</p>
+								</div>
+								<div class="sheet-container-box sheet-kingdom-loy-resources">
+									<div class="sheet-container-header">
+										<button type="text" name="loyalty_resources">Resources</button>
+									</div>
+									<div class="sheet-container-body">
+										<input type="text" name="attr_loyalty_resources" title="@{loyalty_resources}">
+									</div>
+								</div>
+								<div class="math5">
+									<p>+</p>
+								</div>
+								<div class="sheet-container-box sheet-kingdom-loy-alignment">
+									<div class="sheet-container-header">
+										<button type="text" name="loyalty_alignment">Alignment</button>
+									</div>
+									<div class="sheet-container-body">
+										<input type="text" name="attr_loyalty_alignment" title="@{loyalty_alignment}">
+									</div>
+								</div>
+								<div class="math6">
+									<p>+</p>
+								</div>
+								<div class="sheet-container-box sheet-kingdom-loy-skill">
+									<div class="sheet-container-header">
+										<button type="text" name="loyalty_skill">Skill</button>
+									</div>
+									<div class="sheet-container-body">
+										<input type="text" name="attr_loyalty_skill" title="@{loyalty_skill}">
+									</div>
+								</div>
+								<div class="math7">
+									<p>+</p>
+								</div>
+								<div class="sheet-container-box sheet-kingdom-loy-government">
+									<div class="sheet-container-header">
+										<button type="text" name="loyalty_government">Government</button>
+									</div>
+									<div class="sheet-container-body">
+										<input type="text" name="attr_loyalty_government" title="@{loyalty_government}">
+									</div>
+								</div>
+								<div class="math8">
+									<p>-</p>
+								</div>
+								<div class="sheet-container-box sheet-kingdom-loy-edicts-neg">
+									<div class="sheet-container-header">
+										<button type="text" name="loyalty_edicts_neg">Edicts</button>
+									</div>
+									<div class="sheet-container-body">
+										<input type="text" name="attr_loyalty_edicts_neg" title="@{loyalty_edicts_neg}">
+									</div>
+								</div>
+								<div class="math9">
+									<p>-</p>
+								</div>
+								<div class="sheet-container-box sheet-kingdom-loy-unrest">
+									<div class="sheet-container-header">
+										<button type="text" name="loyalty_unrest">Unrest</button>
+									</div>
+									<div class="sheet-container-body">
+										<input type="text" value="@{unrest}">
+									</div>
+								</div>
+								<div class="math10">
+									<p>-</p>
+								</div>
+								<div class="sheet-container-box sheet-kingdom-loy-vacancies">
+									<div class="sheet-container-header">
+										<button type="text" name="loyalty_vacancies">Vacancies</button>
+									</div>
+									<div class="sheet-container-body">
+										<input type="text" name="attr_loyalty_vacancies" title="@{loyalty_vacancies}">
+									</div>
+								</div>
+								<div class="math11">
+									<p>-</p>
+								</div>
+								<div class="sheet-container-box sheet-kingdom-loy-other">
+									<div class="sheet-container-header">
+										<button type="text" name="loyalty_other">Other</button>
+									</div>
+									<div class="sheet-container-body">
+										<input type="text" name="attr_loyalty_other" title="@{loyalty_other}">
+									</div>
+								</div>
+							</div>
+							<div class="sheet-container-well sheet-container-well-trackers-stab">
+								<div class="math0">
+									<p>=</p>
+								</div>
+								<div class="sheet-container-box sheet-kingdom-stab-buildings">
+									<div class="sheet-container-header">
+										<button type="text" name="stability_buildings">Buildings</button>
+									</div>
+									<div class="sheet-container-body">
+										<input type="text" name="attr_stability_buildings" title="@{stability_buildings}">
+									</div>
+								</div>
+								<div class="math1">
+									<p>+</p>
+								</div>
+								<div class="sheet-container-box sheet-kingdom-stab-edicts-pos">
+									<div class="sheet-container-header">
+										<button type="text" name="stability_edicts_pos">Edicts</button>
+									</div>
+									<div class="sheet-container-body">
+										<input type="text" name="attr_stability_edicts_pos" title="@{stability_edicts_pos}">
+									</div>
+								</div>
+								<div class="math2">
+									<p>+</p>
+								</div>
+								<div class="sheet-container-box sheet-kingdom-stab-events">
+									<div class="sheet-container-header">
+										<button type="text" name="stability_events">Events</button>
+									</div>
+									<div class="sheet-container-body">
+										<input type="text" name="attr_stability_events" title="@{stability_events}">
+									</div>
+								</div>
+								<div class="math3">
+									<p>+</p>
+								</div>
+								<div class="sheet-container-box sheet-kingdom-stab-leadership">
+									<div class="sheet-container-header">
+										<button type="text" name="stability_leadership">Leadership</button>
+									</div>
+									<div class="sheet-container-body">
+										<input type="text" name="attr_stability_leadership" title="@{stability_leadership}">
+									</div>
+								</div>
+								<div class="math4">
+									<p>+</p>
+								</div>
+								<div class="sheet-container-box sheet-kingdom-stab-resources">
+									<div class="sheet-container-header">
+										<button type="text" name="stability_resources">Resources</button>
+									</div>
+									<div class="sheet-container-body">
+										<input type="text" name="attr_stability_resources" title="@{stability_resources}">
+									</div>
+								</div>
+								<div class="math5">
+									<p>+</p>
+								</div>
+								<div class="sheet-container-box sheet-kingdom-stab-alignment">
+									<div class="sheet-container-header">
+										<button type="text" name="stability_alignment">Alignment</button>
+									</div>
+									<div class="sheet-container-body">
+										<input type="text" name="attr_stability_alignment" title="@{stability_alignment}">
+									</div>
+								</div>
+								<div class="math6">
+									<p>+</p>
+								</div>
+								<div class="sheet-container-box sheet-kingdom-stab-skill">
+									<div class="sheet-container-header">
+										<button type="text" name="stability_skill">Skill</button>
+									</div>
+									<div class="sheet-container-body">
+										<input type="text" name="attr_stability_skill" title="@{stability_skill}">
+									</div>
+								</div>
+								<div class="math7">
+									<p>+</p>
+								</div>
+								<div class="sheet-container-box sheet-kingdom-stab-government">
+									<div class="sheet-container-header">
+										<button type="text" name="stability_government">Government</button>
+									</div>
+									<div class="sheet-container-body">
+										<input type="text" name="attr_stability_government" title="@{stability_government}">
+									</div>
+								</div>
+								<div class="math8">
+									<p>-</p>
+								</div>
+								<div class="sheet-container-box sheet-kingdom-stab-edicts-neg">
+									<div class="sheet-container-header">
+										<button type="text" name="stability_edicts_neg">Edicts</button>
+									</div>
+									<div class="sheet-container-body">
+										<input type="text" name="attr_stability_edicts_neg" title="@{stability_edicts_neg}">
+									</div>
+								</div>
+								<div class="math9">
+									<p>-</p>
+								</div>
+								<div class="sheet-container-box sheet-kingdom-stab-unrest">
+									<div class="sheet-container-header">
+										<button type="text" name="stability_unrest">Unrest</button>
+									</div>
+									<div class="sheet-container-body">
+										<input type="text" value="@{unrest}">
+									</div>
+								</div>
+								<div class="math10">
+									<p>-</p>
+								</div>
+								<div class="sheet-container-box sheet-kingdom-stab-vacancies">
+									<div class="sheet-container-header">
+										<button type="text" name="stability_vacancies">Vacancies</button>
+									</div>
+									<div class="sheet-container-body">
+										<input type="text" name="attr_stability_vacancies" title="@{stability_vacancies}">
+									</div>
+								</div>
+								<div class="math11">
+									<p>-</p>
+								</div>
+								<div class="sheet-container-box sheet-kingdom-stab-other">
+									<div class="sheet-container-header">
+										<button type="text" name="stability_other">Other</button>
+									</div>
+									<div class="sheet-container-body">
+										<input type="text" name="attr_stability_other" title="@{stability_other}">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="sheet-checkbox-cog">
 				<input type="checkbox" name="attr_kingdom_options-flag" checked="checked">
 				<span class="sheet-toggle-icon"></span>

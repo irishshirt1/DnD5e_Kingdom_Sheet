@@ -2341,6 +2341,335 @@
         padding: 2px 0; }
       .charsheet .sheet-darkerdungeons .sheet-section-pc .sheet-tab-core .sheet-container-well-attributes .sheet-pc-proficiencies .sheet-pc-proficiency button:hover {
         background: #e5fffb; }
+.charsheet .sheet-darkerdungeons .sheet-section-pc .sheet-tab-core .sheet-container-well-trackers {
+  grid-area: trackers;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 30px 30px;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  grid-template-areas: "armor initiative perception speed fate fate"
+ "armor initiative perception speed inspiration inspiration"; }
+  .charsheet .sheet-darkerdungeons .sheet-section-pc .sheet-tab-core .sheet-container-well-trackers .sheet-pc-armor {
+    grid-area: armor; }
+  .charsheet .sheet-darkerdungeons .sheet-section-pc .sheet-tab-core .sheet-container-well-trackers .sheet-pc-initiative {
+    grid-area: initiative; }
+  .charsheet .sheet-darkerdungeons .sheet-section-pc .sheet-tab-core .sheet-container-well-trackers .sheet-pc-perception {
+    grid-area: perception; }
+  .charsheet .sheet-darkerdungeons .sheet-section-pc .sheet-tab-core .sheet-container-well-trackers .sheet-pc-speed {
+    grid-area: speed; }
+  .charsheet .sheet-darkerdungeons .sheet-section-pc .sheet-tab-core .sheet-container-well-trackers .sheet-pc-xp {
+    grid-area: xp;
+    display: none; }
+    .charsheet .sheet-darkerdungeons .sheet-section-pc .sheet-tab-core .sheet-container-well-trackers .sheet-pc-xp .sheet-container-body {
+      width: 152px; }
+  .charsheet .sheet-darkerdungeons .sheet-section-pc .sheet-tab-core .sheet-container-well-trackers .sheet-pc-training {
+    grid-area: training;
+    display: none; }
+  .charsheet .sheet-darkerdungeons .sheet-section-pc .sheet-tab-core .sheet-container-well-trackers .sheet-pc-fate {
+    grid-area: fate; }
+  .charsheet .sheet-darkerdungeons .sheet-section-pc .sheet-tab-core .sheet-container-well-trackers .sheet-pc-inspiration {
+    grid-area: inspiration; }
+.charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core > input[type="radio"]:checked ~ .sheet-tab-content {
+  display: grid;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  grid-template-areas: "attributes trackers-econ"
+  "attributes trackers-loy"
+  "attributes trackers-stab";
+  grid-template-columns: 75 auto;
+  grid-template-rows: 90px 90px 90px; }
+.charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-attributes {
+  grid-area: attributes;
+  display: grid;
+  grid-template-columns: 75px;
+  grid-template-rows: 75px 75px 75px;
+  grid-template-areas: "attributes"
+  "attributes"
+  "attributes";
+  grid-column-gap: 5px;
+  grid-row-gap: 35px; }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-attributes .sheet-kingdom-attributes {
+    grid-area: attributes;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+.charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-econ {
+  grid-area: trackers-econ;
+  display: grid;
+  grid-template-columns: 10px 75px 10px 75px 10px 75px 10px 75px 10px 75px 10px 75px 10px 75px 10px 75px 10px 75px 10px 75px 10px 75px 10px 75px;
+  grid-template-rows: 75px;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  grid-template-areas:"math0_econ buildings_econ math1_econ edicts_pos_econ math2_econ events_econ math3_econ leadership_econ math4_econ resources_econ math5_econ alignment_econ math6_econ skill_econ math7_econ government_econ math8_econ edicts_neg_econ math9_econ unrest_econ math10_econ vacancies_econ math11_econ other_econ"; }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-econ .math0 {
+    grid-area: math0_econ;
+    display: flex;
+	justify-content: center; 
+	align-items: center;  }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-econ .math1 {
+    grid-area: math1_econ;
+    display: flex;
+	justify-content: center; 
+	align-items: center;  }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-econ .math2 {
+    grid-area: math2_econ;
+    display: flex;
+	justify-content: center; 
+	align-items: center;  }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-econ .math3 {
+    grid-area: math3_econ;
+    display: flex;
+	justify-content: center; 
+	align-items: center;  }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-econ .math4 {
+    grid-area: math4_econ;
+    display: flex;
+	justify-content: center; 
+	align-items: center;  }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-econ .math5 {
+    grid-area: math5_econ;
+    display: flex;
+	justify-content: center; 
+	align-items: center;  }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-econ .math6 {
+    grid-area: math6_econ;
+    display: flex;
+	justify-content: center; 
+	align-items: center;  }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-econ .math7 {
+    grid-area: math7_econ;
+    display: flex;
+	justify-content: center; 
+	align-items: center;  }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-econ .math8 {
+    grid-area: math8_econ;
+    display: flex;
+	justify-content: center; 
+	align-items: center;  }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-econ .math9 {
+    grid-area: math9_econ;
+    display: flex;
+	justify-content: center; 
+	align-items: center;  }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-econ .math10 {
+    grid-area: math10_econ;
+    display: flex;
+	justify-content: center; 
+	align-items: center;  }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-econ .math11 {
+    grid-area: math11_econ;
+    display: flex;
+	justify-content: center; 
+	align-items: center;  }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-econ .sheet-kingdom-econ-buildings {
+    grid-area: buildings_econ; }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-econ .sheet-kingdom-econ-edicts-pos {
+    grid-area: edicts_pos_econ; }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-econ .sheet-kingdom-econ-events {
+    grid-area: events_econ; }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-econ .sheet-kingdom-econ-leadership {
+    grid-area: leadership_econ; }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-econ .sheet-kingdom-econ-resources {
+    grid-area: resources_econ; }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-econ .sheet-kingdom-econ-alignment {
+    grid-area: alignment_econ; }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-econ .sheet-kingdom-econ-skill {
+    grid-area: skill_econ; }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-econ .sheet-kingdom-econ-government {
+    grid-area: government_econ; }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-econ .sheet-kingdom-econ-edicts-neg {
+    grid-area: edicts_neg_econ; }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-econ .sheet-kingdom-econ-unrest {
+    grid-area: unrest_econ; }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-econ .sheet-kingdom-econ-vacancies {
+    grid-area: vacancies_econ; }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-econ .sheet-kingdom-econ-other {
+    grid-area: other_econ; }
+.charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-loy {
+  grid-area: trackers-loy;
+  display: grid;
+  grid-template-columns: 10px 75px 10px 75px 10px 75px 10px 75px 10px 75px 10px 75px 10px 75px 10px 75px 10px 75px 10px 75px 10px 75px 10px 75px;
+  grid-template-rows: 75px;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  grid-template-areas:"math0_loy buildings_loy math1_loy edicts_pos_loy math2_loy events_loy math3_loy leadership_loy math4_loy resources_loy math5_loy alignment_loy math6_loy skill_loy math7_loy government_loy math8_loy edicts_neg_loy math9_loy unrest_loy math10_loy vacancies_loy math11_loy other_loy"; }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-loy .math0 {
+    grid-area: math0_loy;
+    display: flex;
+	justify-content: center; 
+	align-items: center;  }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-loy .math1 {
+    grid-area: math1_loy;
+    display: flex;
+	justify-content: center; 
+	align-items: center;  }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-loy .math2 {
+    grid-area: math2_loy;
+    display: flex;
+	justify-content: center; 
+	align-items: center;  }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-loy .math3 {
+    grid-area: math3_loy;
+    display: flex;
+	justify-content: center; 
+	align-items: center;  }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-loy .math4 {
+    grid-area: math4_loy;
+    display: flex;
+	justify-content: center; 
+	align-items: center;  }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-loy .math5 {
+    grid-area: math5_loy;
+    display: flex;
+	justify-content: center; 
+	align-items: center;  }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-loy .math6 {
+    grid-area: math6_loy;
+    display: flex;
+	justify-content: center; 
+	align-items: center;  }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-loy .math7 {
+    grid-area: math7_loy;
+    display: flex;
+	justify-content: center; 
+	align-items: center;  }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-loy .math8 {
+    grid-area: math8_loy;
+    display: flex;
+	justify-content: center; 
+	align-items: center;  }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-loy .math9 {
+    grid-area: math9_loy;
+    display: flex;
+	justify-content: center; 
+	align-items: center;  }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-loy .math10 {
+    grid-area: math10_loy;
+    display: flex;
+	justify-content: center; 
+	align-items: center;  }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-loy .math11 {
+    grid-area: math11_loy;
+    display: flex;
+	justify-content: center; 
+	align-items: center;  }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-loy .sheet-kingdom-loy-buildings {
+    grid-area: buildings_loy; }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-loy .sheet-kingdom-loy-edicts-pos {
+    grid-area: edicts_pos_loy; }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-loy .sheet-kingdom-loy-events {
+    grid-area: events_loy; }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-loy .sheet-kingdom-loy-leadership {
+    grid-area: leadership_loy; }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-loy .sheet-kingdom-loy-resources {
+    grid-area: resources_loy; }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-loy .sheet-kingdom-loy-alignment {
+    grid-area: alignment_loy; }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-loy .sheet-kingdom-loy-skill {
+    grid-area: skill_loy; }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-loy .sheet-kingdom-loy-government {
+    grid-area: government_loy; }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-loy .sheet-kingdom-loy-edicts-neg {
+    grid-area: edicts_neg_loy; }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-loy .sheet-kingdom-loy-unrest {
+    grid-area: unrest_loy; }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-loy .sheet-kingdom-loy-vacancies {
+    grid-area: vacancies_loy; }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-loy .sheet-kingdom-loy-other {
+    grid-area: other_loy; }
+.charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-stab {
+  grid-area: trackers-stab;
+  display: grid;
+  grid-template-columns: 10px 75px 10px 75px 10px 75px 10px 75px 10px 75px 10px 75px 10px 75px 10px 75px 10px 75px 10px 75px 10px 75px 10px 75px;
+  grid-template-rows: 75px;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  grid-template-areas:"math0_stab buildings_stab math1_stab edicts_pos_stab math2_stab events_stab math3_stab leadership_stab math4_stab resources_stab math5_stab alignment_stab math6_stab skill_stab math7_stab government_stab math8_stab edicts_neg_stab math9_stab unrest_stab math10_stab vacancies_stab math11_stab other_stab"; }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-stab .math0 {
+    grid-area: math0_stab;
+    display: flex;
+	justify-content: center; 
+	align-items: center;  }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-stab .math1 {
+    grid-area: math1_stab;
+    display: flex;
+	justify-content: center; 
+	align-items: center;  }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-stab .math2 {
+    grid-area: math2_stab;
+    display: flex;
+	justify-content: center; 
+	align-items: center;  }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-stab .math3 {
+    grid-area: math3_stab;
+    display: flex;
+	justify-content: center; 
+	align-items: center;  }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-stab .math4 {
+    grid-area: math4_stab;
+    display: flex;
+	justify-content: center; 
+	align-items: center;  }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-stab .math5 {
+    grid-area: math5_stab;
+    display: flex;
+	justify-content: center; 
+	align-items: center;  }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-stab .math6 {
+    grid-area: math6_stab;
+    display: flex;
+	justify-content: center; 
+	align-items: center;  }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-stab .math7 {
+    grid-area: math7_stab;
+    display: flex;
+	justify-content: center; 
+	align-items: center;  }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-stab .math8 {
+    grid-area: math8_stab;
+    display: flex;
+	justify-content: center; 
+	align-items: center;  }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-stab .math9 {
+    grid-area: math9_stab;
+    display: flex;
+	justify-content: center; 
+	align-items: center;  }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-stab .math10 {
+    grid-area: math10_stab;
+    display: flex;
+	justify-content: center; 
+	align-items: center;  }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-stab .math11 {
+    grid-area: math11_stab;
+    display: flex;
+	justify-content: center; 
+	align-items: center;  }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-stab .sheet-kingdom-stab-buildings {
+    grid-area: buildings_stab; }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-stab .sheet-kingdom-stab-edicts-pos {
+    grid-area: edicts_pos_stab; }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-stab .sheet-kingdom-stab-events {
+    grid-area: events_stab; }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-stab .sheet-kingdom-stab-leadership {
+    grid-area: leadership_stab; }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-stab .sheet-kingdom-stab-resources {
+    grid-area: resources_stab; }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-stab .sheet-kingdom-stab-alignment {
+    grid-area: alignment_stab; }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-stab .sheet-kingdom-stab-skill {
+    grid-area: skill_stab; }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-stab .sheet-kingdom-stab-government {
+    grid-area: government_stab; }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-stab .sheet-kingdom-stab-edicts-neg {
+    grid-area: edicts_neg_stab; }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-stab .sheet-kingdom-stab-unrest {
+    grid-area: unrest_stab; }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-stab .sheet-kingdom-stab-vacancies {
+    grid-area: vacancies_stab; }
+  .charsheet .sheet-darkerdungeons .sheet-section-kingdom .sheet-tab-core .sheet-container-well-trackers-stab .sheet-kingdom-stab-other {
+    grid-area: other_stab; }
 .charsheet .sheet-darkerdungeons .sheet-section-pc .sheet-tab-core .sheet-container-effects {
   grid-area: effects;
   display: flex;
@@ -2452,7 +2781,7 @@
     .charsheet .sheet-darkerdungeons .sheet-section-pc .sheet-tab-core .sheet-container-well-effects .sheet-pc-exhaustion-details li:nth-of-type(7) input[type=radio]:checked + span::after {
       background: #cf0101;
       height: 82px; }
-.charsheet .sheet-darkerdungeons .sheet-section-pc .sheet-tab-core .sheet-container-well-trackers {
+.charsheet .sheet-darkerdungeons .sheet-section-pc .sheet-tab-core .sheet-container-well-trackers-econ {
   grid-area: trackers;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -2461,25 +2790,25 @@
   grid-row-gap: 5px;
   grid-template-areas: "armor initiative perception speed fate fate"
  "armor initiative perception speed inspiration inspiration"; }
-  .charsheet .sheet-darkerdungeons .sheet-section-pc .sheet-tab-core .sheet-container-well-trackers .sheet-pc-armor {
+  .charsheet .sheet-darkerdungeons .sheet-section-pc .sheet-tab-core .sheet-container-well-trackers-econ .sheet-pc-armor {
     grid-area: armor; }
-  .charsheet .sheet-darkerdungeons .sheet-section-pc .sheet-tab-core .sheet-container-well-trackers .sheet-pc-initiative {
+  .charsheet .sheet-darkerdungeons .sheet-section-pc .sheet-tab-core .sheet-container-well-trackers-econ .sheet-pc-initiative {
     grid-area: initiative; }
-  .charsheet .sheet-darkerdungeons .sheet-section-pc .sheet-tab-core .sheet-container-well-trackers .sheet-pc-perception {
+  .charsheet .sheet-darkerdungeons .sheet-section-pc .sheet-tab-core .sheet-container-well-trackers-econ .sheet-pc-perception {
     grid-area: perception; }
-  .charsheet .sheet-darkerdungeons .sheet-section-pc .sheet-tab-core .sheet-container-well-trackers .sheet-pc-speed {
+  .charsheet .sheet-darkerdungeons .sheet-section-pc .sheet-tab-core .sheet-container-well-trackers-econ .sheet-pc-speed {
     grid-area: speed; }
-  .charsheet .sheet-darkerdungeons .sheet-section-pc .sheet-tab-core .sheet-container-well-trackers .sheet-pc-xp {
+  .charsheet .sheet-darkerdungeons .sheet-section-pc .sheet-tab-core .sheet-container-well-trackers-econ .sheet-pc-xp {
     grid-area: xp;
     display: none; }
-    .charsheet .sheet-darkerdungeons .sheet-section-pc .sheet-tab-core .sheet-container-well-trackers .sheet-pc-xp .sheet-container-body {
+    .charsheet .sheet-darkerdungeons .sheet-section-pc .sheet-tab-core .sheet-container-well-trackers-econ .sheet-pc-xp .sheet-container-body {
       width: 152px; }
-  .charsheet .sheet-darkerdungeons .sheet-section-pc .sheet-tab-core .sheet-container-well-trackers .sheet-pc-training {
+  .charsheet .sheet-darkerdungeons .sheet-section-pc .sheet-tab-core .sheet-container-well-trackers-econ .sheet-pc-training {
     grid-area: training;
     display: none; }
-  .charsheet .sheet-darkerdungeons .sheet-section-pc .sheet-tab-core .sheet-container-well-trackers .sheet-pc-fate {
+  .charsheet .sheet-darkerdungeons .sheet-section-pc .sheet-tab-core .sheet-container-well-trackers-econ .sheet-pc-fate {
     grid-area: fate; }
-  .charsheet .sheet-darkerdungeons .sheet-section-pc .sheet-tab-core .sheet-container-well-trackers .sheet-pc-inspiration {
+  .charsheet .sheet-darkerdungeons .sheet-section-pc .sheet-tab-core .sheet-container-well-trackers-econ .sheet-pc-inspiration {
     grid-area: inspiration; }
 .charsheet .sheet-darkerdungeons .sheet-section-pc .sheet-tab-core .sheet-container-well-health {
   display: grid;
@@ -3683,7 +4012,7 @@
   display: inline-block;
   height: 18px;
   position: absolute;
-  right: 0;
+  right: 50px;
   width: 18px; }
   .charsheet .sheet-darkerdungeons .sheet-checkbox-cog input {
     height: 100%;
@@ -3696,7 +4025,7 @@
       border: none;
       color: inherit;
       opacity: .25;
-      top: -2px; }
+      top: -2px;}
       .charsheet .sheet-darkerdungeons .sheet-checkbox-cog input:checked ~ span::before {
         content: '2';
         color: white; }
